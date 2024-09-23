@@ -3,15 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
-    <title>Chat com IA</title>
+    <title>Página de Login</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link para o CSS externo -->
 </head>
 <body>
-    <div class="chat-container">
-        <div id="messages" class="messages"></div>
-        <input type="text" id="inputMessage" placeholder="Digite sua mensagem..." />
-        <button id="sendButton">Enviar</button>
+    <div class="login-container">
+        <h2>Login</h2>
+        <form id="loginForm">
+            <label for="username">Usuário:</label>
+            <input type="text" id="username" name="username" required>
+            <label for="password">Senha:</label>
+            <input type="password" id="password" name="password" required>
+            <button type="submit">Entrar</button>
+        </form>
+        <p id="error-message"></p>
     </div>
-    <script src="script.js"></script>
+    
+    <script src="script.js"></script> <!-- Link para o JS externo -->
 </body>
 </html>
