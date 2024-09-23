@@ -3,24 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Página de Login</title>
-    <link rel="stylesheet" href="styles.css"> <!-- Link para o CSS externo -->
+    <link rel="stylesheet" href="styles.css"> <!-- Certifique-se de que o caminho está correto -->
+    <title>Login</title>
 </head>
 <body>
-   <!-- From Uiverse.io by alexruix -->
-<div class="form-box">
-  <form class="form">
-    <span class="title">Login</span>
-    <span class="subtitle">Access your account with your email.</span>
-    <div class="form-container">
-      <input type="email" class="input" placeholder="Email">
-      <input type="password" class="input" placeholder="Password">
+    <div id="loader" class="loader">Loading...</div>
+    <div id="content" class="hidden">
+        <div class="form-box">
+            <form class="form">
+                <span class="title">Login</span>
+                <span class="subtitle">Access your account with your email.</span>
+                <div class="form-container">
+                    <input type="email" class="input" placeholder="Email">
+                    <input type="password" class="input" placeholder="Password">
+                </div>
+                <button>Login</button>
+            </form>
+            <div class="form-section">
+                <p>Don't have an account? <a href="">Sign up</a></p>
+            </div>
+        </div>
     </div>
-    <button>Login</button>
-  </form>
-  <div class="form-section">
-    <p>Don't have an account? <a href="">Sign up</a></p>
-  </div>
-</div>
+
+    <script src="script.js"></script> <!-- Link para o arquivo JavaScript -->
 </body>
 </html>
